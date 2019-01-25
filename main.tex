@@ -53,12 +53,11 @@ we may use the following code:
            {16,14,21,15,19,34},
            (i,x) -> M#i = x
            )
-    \end{verbatim}
 \end{verbatim}
 The example above is a \emph{binary search tree}: for every node, its key is $\ge$ all keys in its left subtree and $\le $ all keys in its right subtree.\\\\
 a) Write a a method function \texttt{inorder} with the following methods
 \begin{itemize}
-    \item \textt{inorder (MutableList, ZZ)} --- efficiently prints, in ascending numerical order, all keys in the subtree of a mutable list which is rooted at a particular index (assuming the MutableList represents a BST)
+    \item \texttt{inorder (MutableList, ZZ)} --- efficiently prints, in ascending numerical order, all keys in the subtree of a mutable list which is rooted at a particular index (assuming the MutableList represents a BST)
     \item \texttt{inorder MutableList} --- prints all keys in order
 \end{itemize}
 b) Assuming the BST property holds for your input, write an efficient function that searches for a node with a particular key\\\\
@@ -72,7 +71,7 @@ d) How many lines in $\PP^2$ meet 8 general 3-planes?\\\\
 b) Download the starter code for this problem on github. Try to understand what it does. How many lines are on a generic quintic threefold in $\PP^4?$ Find a friend who chose problem 3b) and compare answers.\\\\
 5) Look up the Eisenbud-Levine-Khimshiashvili signature formula on wikipedia. There is a detailed description of how to compute the local degree of the map $\RR^2 \ni (x,y) \mapsto (x^3 - 3 x y^2, 3 x^2 y - y^3) \in \RR^2$ near $(0,0).$ Can you replicate this calculation using Macaulay2?\\\\
 6) a) For fixed $k\ge 3,$ consider the locus of $(a,b,c)$ for which the polynomial $x^{2^k} + a x^{2^{k-1}} + b x^{2^{k-2}} + c$ has a double root. This should be a affine hypersurface---can you predict its Newton polytope?\\\\
-b) For $n\ge 3,$ how many cones of maximum dimension are in the tropical variety $\trop \left( \langle x_{1, i} + x_{1,j } - x_{i, j} \mid 2 \le i < j \le n \rangle \right)? $\footnote{Problem source:  \hyperlink{https://icerm.brown.edu/programs/sp-f18/w4/files/day1/Problems-by-Diane.pdf})}\\\\
+b) For $n\ge 3,$ how many cones of maximum dimension are in the tropical variety $\trop \left( \langle x_{1, i} + x_{1,j } - x_{i, j} \mid 2 \le i < j \le n \rangle \right)? $\footnote{Problem source:  https://icerm.brown.edu/programs/sp-f18/w4/files/day1/Problems-by-Diane.pdf)}\\\\
 7) a) Explain what the code below does 
 \begin{verbatim}
 R = QQ[x_0,x_1,x_2]
@@ -88,5 +87,5 @@ pointsIdeal = m -> (
     J
     )
 \end{verbatim}
-b) Suppose $X$ is a set of $6$ points in $\PP^2.$ The structure of the homogeneous coordinate ring $k[x_0,x_1,x_2]/I_X$ depends on which subsets of points in $X$ are collinear. Write down all possible Hilbert functions for $X.$ Do the same for Betti tables. Which different configurations give the same invariants?\footnote{Problem source: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.57.7472&rep=rep1&type=pdf}
+b) Suppose $X$ is a set of $6$ points in $\PP^2.$ The structure of the homogeneous coordinate ring $k[x_0,x_1,x_2]/I_X$ depends on which subsets of points in $X$ are collinear. Write down all possible Hilbert functions for $X.$ Do the same for Betti tables. Which different configurations give the same invariants?\footnote{Problem source: (Schenck, \emph{Computational Algebraic Geometry}}
 \end{document}
